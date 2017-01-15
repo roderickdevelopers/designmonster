@@ -1,0 +1,9 @@
+<h4>
+  {{#link-to 'list' list}}
+    {{list.title}}
+  {{/link-to}}
+  <button class="btn btn-med btn-warning" {{action 'editList'}}>Edit!</button>
+{{#if isEmpty}}
+  <button class="btn btn-med btn-danger" {{action 'deleteList'}}>Delete!</button>
+{{/if}}
+</h4>

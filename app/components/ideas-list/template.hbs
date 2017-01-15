@@ -1,0 +1,14 @@
+<h3 class="list-header" {{action 'toggleListDetail'}}>{{list.title}}</h3>
+<ol>
+  {{#each list.items as |item|}}
+    {{ideas-list/item item=item
+                      toggleDone='toggleItemDone'
+                      delete='deleteItem' }}
+  {{/each}}
+</ol>
+
+<form {{action 'createItem' on='submit'}}>
+  {{input type="field" placeholder="New Item" value=newItem.content}}
+
+<button class="btn btn-med btn-warning" type="submit">CREATE!</button>
+</form>
