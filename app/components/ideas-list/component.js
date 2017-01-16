@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     content: null,
     done: false,
   },
-  classNames: ['listr'],
+  classNames: ['idea'],
   classNameBindings: ['listDetailHidden'],
   listDetailHidden: false,
   actions: {
