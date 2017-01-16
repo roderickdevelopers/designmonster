@@ -1,10 +1,36 @@
-<h1>Welcome to Design Monster</h1>
-{{#link-to 'about' }}<h2>Empowering You To Break Through</h2> {{/link-to}}
+<h1>Welcome to Design Monster
+{{#link-to 'about' tagName="tagLine"}}<h4>Empowering You To Break Through</h4> {{/link-to}}</h1>
+<hr>
+<br>
 <div class="row">
-  <div class="col-md-6">
-    <a href="#" target="_blank">Click to go somewhere - would like DIVs here, pictures which link to projects we've worked on</a>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      {{#link-to 'about'}}
+        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>Screen Peace</p>
+        </div>
+      {{/link-to}}
+    </div>
   </div>
-  <div class="col-md-6">
-    <a href="#" target="_blank">Click to go somewhere else - same - SQUARE DIVs</a>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      {{#link-to 'about'}}
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lighting</p>
+        </div>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      {{#link-to 'about'}}
+        <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>Partners</p>
+        </div>
+      {{/link-to}}
+    </div>
   </div>
 </div>

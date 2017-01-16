@@ -7,7 +7,6 @@ export default Ember.Route.extend({
   },
   actions: {
     editList (list) {
-      console.log("inside the lists route, list is", list);
       this.transitionTo('list/edit', list);
     },
     deleteList (list) {

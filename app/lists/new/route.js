@@ -6,11 +6,11 @@ export default Ember.Route.extend({
   },
   actions: {
     createList (list) {
-      console.log("inside list/new route createList");
       list.save();
+      this.transitionTo('lists');
+
     },
     cancelCreateList (list) {
-      console.log("inside lists/new cancel");
         list.rollbackAttributes();
         this.transitionTo('lists');
     },

@@ -6,8 +6,8 @@ export default Ember.Route.extend({
   },
   actions: {
     save (list) {
-    console.log('you got to the list/edit route Your list is ', list);
     list.save();
+    this.transitionTo('lists');
     },
     cancel(list) {
       list.rollbackAttributes();

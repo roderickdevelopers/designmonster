@@ -1,9 +1,15 @@
 <form {{action 'save' on='submit'}}>
-  {{input placeholder='Idea Title'
+
+  <label for="inputComments">Idea Title</label>
+  {{input class="form-control" placeholder='Idea Title'
           value=list.title}}
-  {{input placeholder='Idea Summary'
-          value=list.content}}
-<button class="btn btn-med btn-warning" type="submit">Save</button>
-<button class="btn btn-med btn-warning" {{action 'cancel'}}>Cancel</button>
+
+  <div class="form-group">
+  <label for="inputComments">Summary</label>
+  {{textarea cols="80" rows="6" class="form-control" id="inputComments"
+    placeholder="Idea Summary" value=list.content}}
+</div>
+<button class="btn btn-med btn-default" type="submit">Save</button>
+<button class="btn btn-med btn-info" {{action 'cancel'}}>Cancel</button>
 
 </form>

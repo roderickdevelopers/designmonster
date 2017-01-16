@@ -1,10 +1,11 @@
-<h2>Ideas</h2>
+<h1>Ideas</h1>{{#link-to 'lists/new'}}<button class="btn btn-med btn-primary">Create a New Idea</button>
+{{/link-to}}
+<hr>
 {{#each model as |list|}}
   {{ideas-list/card list=list
                     editList='editList'
                     deleteList='deleteList'}}
 
 {{/each}}
-{{#link-to 'lists/new'}}<button class="btn btn-med btn-danger">Create a New Idea</button>
-{{/link-to}}
+
 {{outlet}}

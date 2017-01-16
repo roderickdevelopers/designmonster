@@ -7,18 +7,14 @@ export default Ember.Route.extend({
   },
   actions: {
     toggleItemDone (item) {
-      console.log('you are in the toggleItemDone and item is ', item);
       item.toggleProperty('done');
-      console.log('inside list route after toggle and item is ', item);
       item.save();
     },
     deleteItem (item) {
       item.destroyRecord ();
     },
     createItem (newItem) {
-    console.log("inside the route creat item, newItem is " , newItem);
     let item = this.get('store').createRecord('item', newItem);
-    console.log("inside the route creat item, newItem is " , item);
     item.save();
     },
   },
