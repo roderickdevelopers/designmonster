@@ -12,6 +12,8 @@ Router.map(function () {
   this.route('lists/new');
   this.route('list', { path: 'lists/:list_id' });
   this.route('list/edit', { path: 'lists/:list_id/edit' });
+  this.route('resources');
+  this.route('projects');
 });
 
 export default Router;
