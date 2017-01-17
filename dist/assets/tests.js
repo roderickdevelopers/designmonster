@@ -239,6 +239,15 @@ define('designmonster/tests/lists/route.jshint.lint-test', ['exports'], function
     assert.ok(true, 'lists/route.js should pass jshint.');
   });
 });
+define('designmonster/tests/projects/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | projects/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'projects/route.js should pass jshint.');
+  });
+});
 define('designmonster/tests/resolver.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -246,6 +255,15 @@ define('designmonster/tests/resolver.jshint.lint-test', ['exports'], function (e
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'resolver.js should pass jshint.');
+  });
+});
+define('designmonster/tests/resources/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | resources/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'resources/route.js should pass jshint.');
   });
 });
 define('designmonster/tests/router.jshint.lint-test', ['exports'], function (exports) {
@@ -342,6 +360,48 @@ define('designmonster/tests/unit/contact/route-test.jshint.lint-test', ['exports
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/contact/route-test.js should pass jshint.');
+  });
+});
+define('designmonster/tests/unit/projects/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:projects', 'Unit | Route | projects', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('designmonster/tests/unit/projects/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/projects/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/projects/route-test.js should pass jshint.');
+  });
+});
+define('designmonster/tests/unit/resources/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:resources', 'Unit | Route | resources', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('designmonster/tests/unit/resources/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/resources/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/resources/route-test.js should pass jshint.');
   });
 });
 /* jshint ignore:start */
