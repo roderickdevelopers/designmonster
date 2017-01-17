@@ -515,7 +515,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("designmonster/app")["default"].create({"name":"designmonster","version":"0.0.1+0c3fbd6b"});
+  require("designmonster/app")["default"].create({"name":"designmonster","version":"0.0.1+8ffb7886"});
 }
 
 /* jshint ignore:end */
