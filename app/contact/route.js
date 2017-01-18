@@ -7,6 +7,7 @@ model () {
   actions: {
     createContact (contact) {
       contact.save();
+      this.transitionTo('contact/success');
     },
   },
 });

@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function () {
   this.route('about');
   this.route('contact');
+  this.route('contact/success', { path: 'contact/success' });
   this.route('lists');
   this.route('lists/new');
   this.route('list', { path: 'lists/:list_id' });
