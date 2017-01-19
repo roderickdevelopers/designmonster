@@ -1,6 +1,7 @@
 Design Monster
 
-<img src="/assets/images/apppicproject4.png">
+![Alt text](/assets/images/apppicproject4.png?raw=true "ScreenShot")
+
 Screenshot of Site link:  http://i.imgur.com/ByV6eTt.png
 
 Deployed:   https://rproderick.github.io/designmonster/#/
