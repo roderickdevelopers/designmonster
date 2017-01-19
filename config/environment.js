@@ -5,6 +5,7 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'designmonster',
     environment: environment,
+    routerRootURL: '/designmonster/',
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -49,7 +50,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-  ENV.rootURL = '/designmonster';
+  ENV.rootURL = '/';
   ENV.locationType = 'hash';
   ENV.apiHost = 'https://vast-taiga-61428.herokuapp.com';
 }
