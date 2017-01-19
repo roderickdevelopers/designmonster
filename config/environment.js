@@ -49,7 +49,6 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-  ENV.baseURL = '/designmonster';
   ENV.rootURL = '/designmonster';
   ENV.locationType = 'hash';
   ENV.apiHost = 'https://vast-taiga-61428.herokuapp.com';
