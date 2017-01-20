@@ -2,7 +2,7 @@ import Ember from 'ember';
 import config from './config/environment';
 
 const Router = Ember.Router.extend({
-  // rootURL: config.routerRootURL,
+  rootURL: config.routerRootURL,
   location: config.locationType,
 });
 
@@ -16,6 +16,10 @@ Router.map(function () {
   this.route('list/edit', { path: 'lists/:list_id/edit' });
   this.route('resources');
   this.route('projects');
+  this.route('sign-up');
+  this.route('sign-in');
+  this.route('change-password');
+  this.route('users');
 });
 
 export default Router;

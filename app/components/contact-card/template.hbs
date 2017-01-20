@@ -1,4 +1,5 @@
 <h1>Contact</h1>
+{{!-- <div class="{{if hasError 'has-error'}} form-group"> --}}
 <form {{action 'createContact' on='submit'}}>
   <div class="form-group">
     <label for="inputEmail">Email address</label>
@@ -8,7 +9,8 @@
   <div class="form-group">
     <label for="inputComments">Comments</label>
     {{textarea cols="80" rows="6" class="form-control" id="inputComments"
-      placeholder="Comments" value=contact.comment}}
+      placeholder="What's On Your Mind?" value=contact.comment}}
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+{{!-- </div> --}}

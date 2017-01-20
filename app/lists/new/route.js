@@ -15,7 +15,6 @@ export default Ember.Route.extend({
       return true;
     },
     createList (list) {
-console.log("list is", list);
       list.save();
       this.transitionTo('lists');
     },

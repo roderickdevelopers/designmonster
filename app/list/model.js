@@ -5,4 +5,5 @@ export default DS.Model.extend({
   content: DS.attr('string'),
   hidden: DS.attr('boolean'),
   items: DS.hasMany('item'),
+  editable: DS.attr('boolean'),
 });

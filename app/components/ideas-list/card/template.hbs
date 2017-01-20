@@ -4,8 +4,8 @@
     {{list.content}}
 <br>
 <br>
+{{#if list.editable}}
   <button class="btn btn-med btn-success" {{action 'editList'}}>Edit!</button>
-{{#if isEmpty}}
   <button class="btn btn-med btn-danger"><span class="glyphicon glyphicon-trash"{{action 'deleteList'}}></span></button>
 {{/if}}
 </h4>

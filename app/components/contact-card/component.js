@@ -7,8 +7,3 @@ export default Ember.Component.extend({
     },
   },
 });
-
-// save (list) {
-// list.save();
-// this.transitionTo('lists');
-// },
